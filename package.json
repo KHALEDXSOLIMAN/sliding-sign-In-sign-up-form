@@ -13,11 +13,13 @@
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin img/* --out-dir='dist/img'",
     "usemin": "usemin index.html -d dist -o dist/index.html --htmlmin true",
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://KHALEDXSOLIMAN.github..io/sliderform",
   "devDependencies": {
     "cssmin": "^0.4.3",
     "grunt": "^1.1.0",
@@ -34,6 +36,7 @@
     "usemin-cli": "^0.6.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.0"
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "gh-pages": "^3.0.0"
   }
 }
